@@ -11,7 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: myCompositeAction
-      uses: n3wt0n/CompositeActionsArchive@v1
+      #uses: n3wt0n/CompositeActionsArchive@v1
+      uses: bhanuandrajula/composite-run-steps@v1
       with:
         destinationFolder: '/whatever/folder'
     - run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
