@@ -8,6 +8,8 @@ jobs:
     - uses: actions/checkout@v2
     - id: foo
       uses: bhanuandrajula/composite-run-steps@v2
+      env:
+        token: ${{ secrets.GITHUBPAT }}
       with:
         who-to-greet: 'Mona the Octocat'
     - run: echo random-number ${{ steps.foo.outputs.random-number }} 
