@@ -2,7 +2,7 @@
 
 name: Composite Example
 
-on: [workflow_dispatch]
+on: [push]
 
 jobs:
   copy_files_job:
